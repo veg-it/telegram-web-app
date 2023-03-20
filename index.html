@@ -32,10 +32,13 @@
       padding: 40px 20px;
       border-radius: 10px;
       background-color: var(--tg-theme-secondary-bg-color);
+      color: var(--tg-theme-text-color);
     }
     select{
         font-size: 48px;
         padding: 40px 20px;
+        background-color: var(--tg-theme-secondary-bg-color);
+        color: var(--tg-theme-text-color);
     }
     option{
         font-size: 48px;
@@ -47,7 +50,8 @@
     }
   </style>
   <script type="text/javascript">
-    document.getElementById;
+    window.Telegram.WebApp.setWindowHeight(500);
+    \Telegram.WebApp.setWindowHeight(500);
     Telegram.WebApp.ready();
     Telegram.WebApp.MainButton.setText('Sent data')
       .show()
