@@ -6,21 +6,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>python-telegram-bot Example WebApp</title>
-    <link rel="preconnect" href="<https://fonts.gstatic.com>">
-<link href="<https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap>" rel="stylesheet">
+    <link rel="preconnect" href="<https://fonts.gstatic.com>" />
+    <link
+      href="<https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap>"
+      rel="stylesheet" />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
   <style>
-    body{
-        background-color: var(--tg-theme-bg-color)
-        /* background-color: #000 */
+    body {
+      background-color: var(--tg-theme-bg-color);
+      /* background-color: #000 */
     }
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-size: 18px;
-        font-family: 'Poppins', sans-serif;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
     }
     form {
       display: flex;
@@ -29,23 +31,23 @@
       width: 100%;
     }
     input {
-        padding: 20px 10px;
+      padding: 20px 10px;
       border-radius: 10px;
       background-color: var(--tg-theme-secondary-bg-color);
       color: var(--tg-theme-text-color);
     }
-    select{
-        padding: 20px 10px;
-        background-color: var(--tg-theme-secondary-bg-color);
-        color: var(--tg-theme-text-color);
-        border: none;
+    select {
+      padding: 20px 10px;
+      background-color: var(--tg-theme-secondary-bg-color);
+      color: var(--tg-theme-text-color);
+      border: none;
     }
-    option{
-        background-color: var(--tg-theme-secondary-bg-color);
+    option {
+      background-color: var(--tg-theme-secondary-bg-color);
     }
-    label{
-        color: var(--tg-theme-text-color);
-        margin: 20px
+    label {
+      color: var(--tg-theme-text-color);
+      margin: 20px;
     }
   </style>
   <script type="text/javascript">
@@ -56,7 +58,7 @@
         const data = JSON.stringify({
           fname: document.getElementById('fname').value,
           lname: document.getElementById('lname').value,
-          country: document.getElementById('country').value
+          country: document.getElementById('country').value,
         });
         Telegram.WebApp.sendData(data);
         Telegram.WebApp.close();
