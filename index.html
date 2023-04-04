@@ -1,94 +1,137 @@
-<!--
-    Simple static Telegram WebApp. Does not verify the WebAppInitData, as a bot token would be needed for that.
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>python-telegram-bot Example WebApp</title>
-    <link rel="preconnect" href="<https://fonts.gstatic.com>">
-<link href="<https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap>" rel="stylesheet">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #deck{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+      .card {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      h2{
+        font-weight: 300;
+      }
+    </style>
   </head>
-  <style>
-    body{
-        background-color: var(--tg-theme-bg-color)
-        /* background-color: #000 */
-    }
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-size: 18px;
-        font-family: 'Poppins', sans-serif;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      padding: 40px;
-      width: 100%;
-    }
-    input {
-        padding: 20px 10px;
-      border-radius: 10px;
-      background-color: var(--tg-theme-secondary-bg-color);
-      color: var(--tg-theme-text-color);
-    }
-    select{
-        padding: 20px 10px;
-        background-color: var(--tg-theme-secondary-bg-color);
-        color: var(--tg-theme-text-color);
-        border: none;
-    }
-    option{
-        background-color: var(--tg-theme-secondary-bg-color);
-    }
-    label{
-        color: var(--tg-theme-text-color);
-        margin: 20px
-    }
-  </style>
-  <script type="text/javascript">
-    Telegram.WebApp.ready();
-    Telegram.WebApp.MainButton.setText('Sent data')
-      .show()
-      .onClick(function () {
-        const data = JSON.stringify({
-          fname: document.getElementById('fname').value,
-          lname: document.getElementById('lname').value,
-          country: document.getElementById('country').value
-        });
-        Telegram.WebApp.sendData(data);
-        Telegram.WebApp.close();
-      });
-  </script>
   <body>
-    <form>
-      <label for="fname">First Name</label>
-      <input
-        type="text"
-        id="fname"
-        name="firstname"
-        placeholder="Your name.." />
-
-      <label for="lname">Last Name</label>
-      <input
-        type="text"
-        id="lname"
-        name="lastname"
-        placeholder="Your last name.." />
-
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-
-      <!-- <input type="submit" value="Submit"> -->
-    </form>
+    <div id="deck">
+        <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+          <div class="card">
+            <h2>Діябло</h2>
+            <img
+              src="https://mavrapizza.com/wp-content/uploads/dyablo_Montazhnaya-oblast-1.png"
+              alt=""
+              srcset="" />
+            <span>Вес 520 г</span>
+            <span>Диаметр</span>
+            <span>30 см, 45 см</span>
+            <p>125 ₴ – 250 ₴</p>
+          </div>
+    </div>
   </body>
-  <script type="text/javascript">
-    // Telegram.WebApp.expand();
-  </script>
 </html>
