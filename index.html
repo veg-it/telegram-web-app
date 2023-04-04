@@ -35,6 +35,9 @@
       }
       * {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
       }
       #deck {
         display: flex;
@@ -44,25 +47,46 @@
       }
       .card {
         display: flex;
-        justify-content: center;
         width: 25%;
         flex-direction: column;
         text-align: center;
       }
-      img {
+      .card img {
         width: 100%;
         margin-bottom: 10px;
       }
       h3 {
         font-weight: 300;
       }
-      span{
+      span {
         font-size: 4vw;
+      }
+      p{
+        color: #89AF3F
+      }
+      #header{
+        background-color: #fff;
+        /* color: white; */
+        padding: 1rem ;
+        display: flex;
+        align-items: center;
+        gap: 10px
+      }
+      #header img{
+        width: 20%;
+      }
+      #header h2{
+        color: #3f3f3f;
       }
     </style>
   </head>
   <body>
+    <div id="header">
+        <img src="https://mavrapizza.com/wp-content/uploads/logo.png" />
+        <h2>Mavra</h2>
+    </div>
     <div id="deck">
+
       <div class="card">
         <h3>Діябло</h3>
         <img
